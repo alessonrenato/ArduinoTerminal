@@ -9,10 +9,10 @@ Resolvi criar este repositório basicamente por dois motivos: não encontrei bon
 IDE padrão do Arduino e porque o tutorial do repositório mestre para a criação das childs é bastante confuso para a maioria dos usuários.
 
 ## Requisitos
-    * Ter uma placa Arduino.
-    * Instalar a Versão mais recente do software do Arduino
-    * Clonar ou fazer o download do .zip do repositório mestre do Makefile
-    * Clonar ou copiar o Arquivo "makefile" deste repositório para a pasta que pretende escrever os códigos .ino
+    - Ter uma placa Arduino.
+    - Instalar a Versão mais recente do software do Arduino
+    - Clonar ou fazer o download do .zip do repositório mestre do Makefile
+    - Clonar ou copiar o Arquivo "makefile" deste repositório para a pasta que pretende escrever os códigos .ino
 
 ## Configuração
     Para o funcionamento da child algumas variáveis no makefile precisam ser configuradas:
