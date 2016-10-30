@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Este makefile é uma "child" (criança) derivada do repositório Arduino-Makefile para uso com arduino.
+Este makefile é uma "child" (criança) derivada do repositório [Arduino-Makefile](https://github.com/sudar/Arduino-Makefile) para uso com arduino.
 
 Para mais informações sobre instalação e funcionamento, consulte a [wiki](https://github.com/alessonrenato/ArduinoTerminal/wiki)
 
