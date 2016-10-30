@@ -9,10 +9,24 @@ Resolvi criar este repositório basicamente por dois motivos: não encontrei bon
 IDE padrão do Arduino e porque o tutorial do repositório mestre para a criação das childs é bastante confuso para a maioria dos usuários.
 
 ## Requisitos
+    - Sistema linux (no meu caso instalei sem problemas no Debian Jessie)
     - Ter uma placa Arduino.
-    - Instalar a Versão mais recente do software do Arduino
-    - Clonar ou fazer o download do .zip do repositório mestre do Makefile
-    - Clonar ou copiar o Arquivo "makefile" deste repositório para a pasta que pretende escrever os códigos .ino
 
+## Instalação
+    Primeiramente algumas dependências precisam se instaladas no debian:
+        ```
+            sudo apt-get update
+            sudo apt-get install -y libdevice-serialport-perl libyaml-perl python-serial
+        ```
+    Agora vamos fazer o download do makefile mestre pelo git:
+        ```
+            git clone git@github.com:sudar/Arduino-Makefile.git            
+        ```
+    Caso não queira usar o git faça o download zip do arquivo pelo [link](https://github.com/sudar/Arduino-Makefile/archive/master.zip) e extrair em uma pasta de sua escolha.
+    
+    Apesar de eu não recomendar porque essa versão sempre está mais desatualizada, o mestre também pode ser baixado pelo apt-get:
+        ```
+            sudo apt-get install arduino-mk
+        ```
 ## Configuração
     Para o funcionamento da child algumas variáveis no makefile precisam ser configuradas:
