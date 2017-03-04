@@ -1,17 +1,14 @@
 #Arduino Makefile child
-# GNU 3.0 GPL
-# By Alesson Renato Lopes
-# Credits to Sudar/Arduino-Makefile
-#
-#
 
-#GLOBAL SETTINGS
+#GLOBAL SETTINGS (DO NOT TOUCH!)
 
 #Directory where Arduino is installed
-ARDUINO_DIR= #inserir o caminho para a pasta do software do arduino. Ex: /home/fulano/arduino
+#ARDUINO_DIR=/home/alesson/workstation/Arduino/arduino-1.6.12  (old)
+ARDUINO_DIR=/usr/share/arduino
 
 #Directory where you have copied the makefile
-ARDMK_DIR= #inserir o caminho para a pasta do makefile mestre. Ex: /home/fulano/Arduino-Makefile
+#ARDMK_DIR=/home/alesson/workstation/Arduino/Arduino-Makefile
+ARDMK_DIR=/usr/share/arduino
 
 #Directory where avr tools are installed (usando o padrao da ide do arduino)
 #AVR_TOOLS_DIR=/usr
@@ -19,8 +16,8 @@ ARDMK_DIR= #inserir o caminho para a pasta do makefile mestre. Ex: /home/fulano/
 ##############################################################
 #PROJECT SETTINGS (BE CAREFULL!)
 
-#BOARD SELECT (confira o tipo de placa e descomente as opções do bloco, não esqueça de deixa comentada as outras)
-#The Arduino board that you are using. By default Uno is used (default do makefile é a UNO, porém esta child está setada para mega2560)
+#BOARD SELECT
+#The Arduino board that you are using. By default Uno is used
 
 # --- ARDUINO UNO
 #BOARD_TAG    = uno
@@ -28,8 +25,6 @@ ARDMK_DIR= #inserir o caminho para a pasta do makefile mestre. Ex: /home/fulano/
 # --- ARDUINO MEGA2560 IDE 1.6+
 BOARD_TAG    = mega
 BOARD_SUB    = atmega2560
-#The serial port where Arduino is connected
-MONITOR_PORT=/dev/ttyACM0
 
 # --- mega2560 ide 1.0 (old)
 #BOARD_TAG    = mega2560
@@ -129,9 +124,10 @@ MONITOR_PORT=/dev/ttyACM0
 #AVRDUDE_OPTS = -v
 #BOARDS_TXT   = $(HOME)/arduino/hardware/breadboard/boards.txt
 
+#The serial port where Arduino is connected
+MONITOR_PORT=/dev/ttyACM0
 
 #Space separated set of libraries that are used by your sketch
 #ARDUINO_LIBS=
-
-include $(ARDMK_DIR)/Arduino.mk
-
+include $(ARDUINO_DIR)/Arduino.mk
+#include /home/alesson/workstation/Arduino/Arduino-Makefile/Arduino.mk (old)
