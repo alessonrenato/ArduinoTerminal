@@ -3,11 +3,9 @@
 #GLOBAL SETTINGS (DO NOT TOUCH!)
 
 #Directory where Arduino is installed
-#ARDUINO_DIR=/home/alesson/workstation/Arduino/arduino-1.6.12  (old)
 ARDUINO_DIR=/usr/share/arduino
 
 #Directory where you have copied the makefile
-#ARDMK_DIR=/home/alesson/workstation/Arduino/Arduino-Makefile
 ARDMK_DIR=/usr/share/arduino
 
 #Directory where avr tools are installed (usando o padrao da ide do arduino)
@@ -129,5 +127,7 @@ MONITOR_PORT=/dev/ttyACM0
 
 #Space separated set of libraries that are used by your sketch
 #ARDUINO_LIBS=
+
+#Arduino makefile master
 include $(ARDUINO_DIR)/Arduino.mk
-#include /home/alesson/workstation/Arduino/Arduino-Makefile/Arduino.mk (old)
+
