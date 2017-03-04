@@ -8,23 +8,28 @@ Para mais informações sobre instalação e funcionamento, consulte a [wiki](ht
 
 ## Instalação Facilitada:
 
-Recomendada para a maioria dos usuários, caso queria um modo mais avançado consulte a [wiki](https://github.com/alessonrenato/ArduinoTerminal/wiki)
+Recomendada para a maioria dos usuários, caso queira um modo mais avançado consulte a [wiki](https://github.com/alessonrenato/ArduinoTerminal/wiki)
 
 - Necessário baixar o pacote do Arduino:
+
 `
     sudo apt-get update
 
     sudo apt-get install arduino
 `
+
 - Primeiramente algumas dependências precisam se instaladas no debian:
 
 `
     sudo apt-get install -y libdevice-serialport-perl libyaml-perl python-serial
 `
+
 - Próximo passo, instalar o makefile mestre:
+
 `
     sudo apt-get install arduino-mk
 `
+
 - Agora clone este repositório, ou apenas copie o arquivo "makefile" deste repositório para a pasta do seu projeto.
 - Escreva o código .ino com um editor de texto qualquer (ex: vim) e salve.
 - Use o comando 'make' para compilar.
