@@ -14,7 +14,8 @@ Recomendada para a maioria dos usuários, caso queira um modo mais avançado con
 
 `
     sudo apt-get update
-
+`
+`
     sudo apt-get install arduino
 `
 
