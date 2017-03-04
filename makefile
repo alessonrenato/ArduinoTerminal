@@ -132,5 +132,5 @@ MONITOR_PORT=/dev/ttyACM0
 #ARDUINO_LIBS=
 
 #Arduino makefile master
-include $(ARDUINO_DIR)/Arduino.mk
+include $(ARDMK_DIR)/Arduino.mk
 
