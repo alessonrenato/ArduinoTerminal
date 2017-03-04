@@ -1,6 +1,9 @@
-#Arduino Makefile child
+# Arduino Makefile child
+# (C) 2017, Alesson Renato Lopes <github.com/alessonrenato>
+# A child makefile to compilate Arduino (.ino) projects without Arduino IDE
+# GNU 3.0
 
-#GLOBAL SETTINGS (DO NOT TOUCH!)
+#GLOBAL SETTINGS (Advanced users only)
 
 #Directory where Arduino is installed
 ARDUINO_DIR=/usr/share/arduino
@@ -12,10 +15,10 @@ ARDMK_DIR=/usr/share/arduino
 #AVR_TOOLS_DIR=/usr
 
 ##############################################################
-#PROJECT SETTINGS (BE CAREFULL!)
+#PROJECT SETTINGS (BE CAREFULL!, only one block per time. Uncoment your board block)
 
 #BOARD SELECT
-#The Arduino board that you are using. By default Uno is used
+#The Arduino board that you are using. By default Uno is used (In this makefile, mega2560 is setted)
 
 # --- ARDUINO UNO
 #BOARD_TAG    = uno
